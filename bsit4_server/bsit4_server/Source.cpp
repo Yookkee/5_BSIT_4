@@ -101,7 +101,7 @@ int main_activity()
 	PSECURITY_DESCRIPTOR pSecDescr;
 	int dwRes = GetNamedSecurityInfoA("MACHINE\\HKEY_CURRENT_USER\\SOFTWARE\\Audacity\\Audacity", SE_REGISTRY_KEY, OWNER_SECURITY_INFORMATION, &pOwnerSID, NULL, NULL, NULL, &pSecDescr);
 	*/
-
+	char cmd = -1;
 	while (true)
 	{
 		std::string msg;
@@ -109,10 +109,11 @@ int main_activity()
 		msg = recv_message();
 		if (msg.length() == 0)
 		{
+			if (cmd == -1) continue;
 			std::cout << "Error : main_activity : msg.lenght == 0" << std::endl;
 			return -1;
 		}
-		char cmd = msg.c_str()[0];
+		cmd = msg.c_str()[0];
 		cmd -= REQUEST_BIT;
 
 		switch (cmd)

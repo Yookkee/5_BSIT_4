@@ -1,15 +1,61 @@
-﻿Build started 01.12.2016 3:05:05.
+﻿Build started 01.12.2016 5:16:37.
      1>Project "C:\Users\japro_000\documents\visual studio 2013\Projects\bsit4_server\bsit4_server\bsit4_server.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt info_collector.cpp Source.cpp
          Source.cpp
-     1>c:\users\japro_000\documents\visual studio 2013\projects\bsit4_server\bsit4_server\source.cpp(180): warning C4715: 'send_message' : not all control paths return a value
+         info_collector.cpp
+         Generating Code...
+     1>c:\users\japro_000\documents\visual studio 2013\projects\bsit4_server\bsit4_server\source.cpp(181): warning C4715: 'send_message' : not all control paths return a value
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\japro_000\documents\visual studio 2013\Projects\bsit4_server\Debug\bsit4_server.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\japro_000\documents\visual studio 2013\Projects\bsit4_server\Debug\bsit4_server.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\japro_000\documents\visual studio 2013\Projects\bsit4_server\Debug\bsit4_server.lib" /MACHINE:X86 Debug\info_collector.obj
          Debug\Source.obj
-         bsit4_server.vcxproj -> C:\Users\japro_000\documents\visual studio 2013\Projects\bsit4_server\Debug\bsit4_server.exe
-     1>Done Building Project "C:\Users\japro_000\documents\visual studio 2013\Projects\bsit4_server\bsit4_server\bsit4_server.vcxproj" (Build target(s)).
+     1>info_collector.obj : error LNK2005: "public: __thiscall std::_Container_base12::_Container_base12(void)" (??0_Container_base12@std@@QAE@XZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: __thiscall std::locale::id::id(unsigned int)" (??0id@locale@std@@QAE@I@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: __thiscall std::_Container_base12::~_Container_base12(void)" (??1_Container_base12@std@@QAE@XZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator<<(unsigned long)" (??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@K@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > & (__cdecl*)(class std::basic_ostream<char,struct std::char_traits<char> > &))" (??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: void __thiscall std::_Container_base12::_Orphan_all(void)" (?_Orphan_all@_Container_base12@std@@QAEXXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: void __thiscall std::basic_ostream<char,struct std::char_traits<char> >::_Osfx(void)" (?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: char __thiscall std::basic_ios<char,struct std::char_traits<char> >::fill(void)const " (?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: int __thiscall std::ios_base::flags(void)const " (?flags@ios_base@std@@QBEHXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::flush(void)" (?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: bool __thiscall std::ios_base::good(void)const " (?good@ios_base@std@@QBE_NXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)" (?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@D@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: class std::basic_streambuf<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::rdbuf(void)const " (?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool)" (?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char)" (?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputn(char const *,__int64)" (?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::tie(void)const " (?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: char __thiscall std::basic_ios<char,struct std::char_traits<char> >::widen(char)const " (?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDD@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: __int64 __thiscall std::ios_base::width(__int64)" (?width@ios_base@std@@QAE_J_J@Z) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>info_collector.obj : error LNK2005: "public: __int64 __thiscall std::ios_base::width(void)const " (?width@ios_base@std@@QBE_JXZ) already defined in msvcprtd.lib(MSVCP120D.dll)
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>libcpmtd.lib(xwcsxfrm.obj) : error LNK2001: unresolved external symbol __free_dbg
+     1>libcpmtd.lib(cout.obj) : error LNK2001: unresolved external symbol __free_dbg
+     1>libcpmtd.lib(locale.obj) : error LNK2019: unresolved external symbol __free_dbg referenced in function "public: void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Xlen(void)const " (?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ)
+     1>libcpmtd.lib(wlocale.obj) : error LNK2001: unresolved external symbol __free_dbg
+     1>libcpmtd.lib(xlocale.obj) : error LNK2001: unresolved external symbol __free_dbg
+     1>info_collector.obj : error LNK2001: unresolved external symbol __free_dbg
+     1>Source.obj : error LNK2001: unresolved external symbol __free_dbg
+     1>libcpmtd.lib(locale0.obj) : error LNK2001: unresolved external symbol __free_dbg
+     1>libcpmtd.lib(xdebug.obj) : error LNK2001: unresolved external symbol __free_dbg
+     1>libcpmtd.lib(xlocale.obj) : error LNK2001: unresolved external symbol __CrtDbgReportW
+     1>libcpmtd.lib(xmbtowc.obj) : error LNK2001: unresolved external symbol __CrtDbgReportW
+     1>Source.obj : error LNK2019: unresolved external symbol __CrtDbgReportW referenced in function "public: char const & __thiscall std::_String_const_iterator<class std::_String_val<struct std::_Simple_types<char> > >::operator*(void)const " (??D?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@QBEABDXZ)
+     1>libcpmtd.lib(stdthrow.obj) : error LNK2001: unresolved external symbol __CrtDbgReportW
+     1>libcpmtd.lib(cout.obj) : error LNK2001: unresolved external symbol __CrtDbgReportW
+     1>libcpmtd.lib(wlocale.obj) : error LNK2001: unresolved external symbol __CrtDbgReportW
+     1>libcpmtd.lib(_tolower.obj) : error LNK2019: unresolved external symbol __calloc_dbg referenced in function __Getctype
+     1>libcpmtd.lib(xlocale.obj) : error LNK2001: unresolved external symbol __malloc_dbg
+     1>libcpmtd.lib(xwcsxfrm.obj) : error LNK2001: unresolved external symbol __malloc_dbg
+     1>libcpmtd.lib(locale0.obj) : error LNK2019: unresolved external symbol __malloc_dbg referenced in function "public: class std::_Yarn<char> & __thiscall std::_Yarn<char>::operator=(char const *)" (??4?$_Yarn@D@std@@QAEAAV01@PBD@Z)
+     1>libcpmtd.lib(xdebug.obj) : error LNK2001: unresolved external symbol __malloc_dbg
+     1>libcpmtd.lib(locale.obj) : error LNK2001: unresolved external symbol __malloc_dbg
+     1>libcpmtd.lib(wlocale.obj) : error LNK2001: unresolved external symbol __malloc_dbg
+     1>libcpmtd.lib(locale.obj) : error LNK2019: unresolved external symbol __realloc_dbg referenced in function "private: static void __cdecl std::locale::_Locimp::_Locimp_Addfac(class std::locale::_Locimp *,class std::locale::facet *,unsigned int)" (?_Locimp_Addfac@_Locimp@locale@std@@CAXPAV123@PAVfacet@23@I@Z)
+     1>C:\Users\japro_000\documents\visual studio 2013\Projects\bsit4_server\Debug\bsit4_server.exe : fatal error LNK1120: 5 unresolved externals
+     1>Done Building Project "C:\Users\japro_000\documents\visual studio 2013\Projects\bsit4_server\bsit4_server\bsit4_server.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.30
+Time Elapsed 00:00:34.65
